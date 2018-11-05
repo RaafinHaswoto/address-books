@@ -9,11 +9,36 @@
         crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
-    <script src="main.js"></script>
+    <script src="index.js"></script>
 </head>
 
 <body>
+    <div id="app" class="container">
 
+        <header>
+            <h1 id="title">Simple Address Book</h1>
+        </header>
+
+        <section>
+            <form>
+                <div class="form-row align-items-center">
+                    <div class="col-auto">
+                        <input type="text" id="full-name" name="fullname" value="" placeholder="First Last" class="form-control">
+                    </div>
+                    <div class="col-auto">
+                        <button id="add-button" class="btn btn-secondary" type="button" name="button">Add Contact</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <section>
+            <br>
+            <ul id="contacts">
+                
+            </ul>
+        </section>
+    </div>
 </body>
 
 </html>
